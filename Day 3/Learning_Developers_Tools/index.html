@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+	<title> Learning Developers Tools </title>
+</head>
+<body>
+
+	<h3> <center> Check your Console </center> </h3>
+  
+</body>
+
+<script>
+	console.log('Arun Chauhan learning Chrome Developers tools');
+	console.error('Error while running code');
+	console.warn("Don't share your OTP !");
+
+	console.table([{Name:'Arun Chauhan', Username:'iamarunchauhan'}]);
+
+    console.group('#100DaysOfCode'); 
+		console.log('Day 1');
+		console.log('Day 2');
+		console.log('Day 3');
+	console.groupEnd('#100DaysOfCode');
+
+	// Set localstorage - Remains until clears or deleted
+	localStorage.setItem('Name','Arun');
+
+	// Set sessionstorage - will stay until browser close
+	sessionStorage.setItem('user', 'Will');
+
+	// Set cookie
+	document.cookie = "username=Arun Chauhan";
+
+</script>
+</html>
