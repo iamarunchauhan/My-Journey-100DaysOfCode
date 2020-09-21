@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Emoji Picker </title>
+        <style type="text/css">
+           *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: 'Trebuchet MS';
+            }
+
+            .container{
+                width: 600px;
+                margin: 50px auto;
+            }
+        </style>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" integrity="sha512-vEia6TQGr3FqC6h55/NdU3QSM5XR6HSl5fW71QTKrgeER98LIMGwymBVM867C1XHIkYD9nMTfWK2A0xcodKHNA==" crossorigin="anonymous" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js" integrity="sha512-hkvXFLlESjeYENO4CNi69z3A1puvONQV5Uh+G4TUDayZxSLyic5Kba9hhuiNLbHqdnKNMk2PxXKm0v7KDnWkYA==" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body style="background-color:lightgoldenrodyellow;">
+        <h1 style="text-align: center;margin-top: 20px;"> Emoji Picker </h1>
+
+        <div class="container">
+            <textarea id="myText"></textarea>
+        </div>
+    
+        <script>
+        $('#myText').emojioneArea({
+            pickerPosition:'right',
+            filtersPosition: "bottom"
+        })
+        </script>
+
+    </body>
+</html>
